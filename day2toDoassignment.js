@@ -19,12 +19,7 @@ btnSubmit.addEventListener("click",function() {
     removeButton.innerHTML = "Remove"
     
     removeButton.addEventListener("click", function() { 
-        if (this.parentElement == taskEntryUL){
-            console.log(this.parentElement)
-            taskEntryUL.removeChild(this.parentElement)}
-        else {
-            completedTasksUL.removeChild(this.parentElement)
-        }
+        this.parentElement.remove()
        
 
 
